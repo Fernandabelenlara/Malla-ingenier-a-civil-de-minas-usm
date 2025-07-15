@@ -1,0 +1,60 @@
+/* estilos.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffe4f0;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #c2185b;
+}
+
+.semestre {
+  margin-bottom: 30px;
+}
+
+.semestre h2 {
+  color: #880e4f;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.ramo {
+  background-color: #f8bbd0;
+  border: 2px solid #c2185b;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s;
+  min-width: 180px;
+}
+
+.ramo:hover {
+  transform: scale(1.05);
+}
+
+.ramo.aprobado {
+  background-color: #c2185b;
+  color: white;
+  text-decoration: line-through;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.ramo.bloqueado {
+  background-color: #fce4ec;
+  border-color: #f8bbd0;
+  color: #999;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.5;
+}
